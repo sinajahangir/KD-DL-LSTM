@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
 """
 The following code can be used for knowledge distillation (KD) of deep learning (DL) models.
-The goal is to use KD to transfer knowledge from an ensmble of DL models, here a pool of LSTM models,
-to a single DL model.
-The resulted model shows subtantian improvement compared to a "vanilla" DL model, where KD
+The goal is to use KD to transfer knowledge from a DL model trained with a different, and potentiallt better data,
+to a DL model that will use alternative input.
+
+Daymet and ERA5-Land were used as input to the teacher and student models
+
+The resulted model shows subtantian improvement compared to a "vanilla" DL model (training using the different source), where KD
 was not utilized for training.
 First version: May 2025 (Sina Jahangir)
 """
